@@ -1,0 +1,22 @@
+.menu {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+ 
+.menu li {
+    float: left;
+    width: auto;
+}
+.menu li a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: url("mon-image.png") no-repeat 0 top; /* On positionne l'image en haut */
+}
+.menu li a:hover {
+    /* On affiche seulement la portion de l'image voulue : le bas */
+    background-position: 0 bottom;
+}

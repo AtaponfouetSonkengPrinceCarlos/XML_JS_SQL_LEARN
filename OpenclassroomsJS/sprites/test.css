@@ -1,0 +1,14 @@
+.icone li {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-image: url("ico7.png");
+    background-repeat: no-repeat;
+}
+    .icone-1 { background-position: left top; }
+    .icone-2 { background-position: 20% top; }
+    .icone-3 { background-position: 40% top; }
+    .icone-4 { background-position: 60% top; }
+    .icone-5 { background-position: 80% top; }
+    .icone-6 { background-position: right top; }
+.icone a:hover img { visibility: hidden; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+        function sendDSL() {
+            var scriptElement = document.createElement('script');
+                scriptElement.src = 'dsl_script.php';
+         
+            document.body.appendChild(scriptElement);
+        }
+         
+        function receiveMessage(json) {
+    var tree = '', nbItems, i;
+     
+    for (node in json) { 
+        tree   += node + "\n";
+        nbItems = json[node].length;
+         
+        for (i=0; i<nbItems; i++) {
+            tree += '\t' + json[node][i] + '\n';
+        }
+    }
+     
+    alert(tree);
+        }
+        </script>
+        <p><button type="button" onclick="sendDSL()">Charger le JSON</button></p>
+</body>
+</html>

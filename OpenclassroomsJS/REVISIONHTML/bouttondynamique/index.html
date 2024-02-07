@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutton de navigation</title>
+    <style type="text/css">
+     .icon-bar {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #CECECE;
+    -webkit-border-radius: 1px; /* Ce sont des préfixes, pour que les navigateurs */
+       -moz-border-radius: 1px; /* prennent en charge les nouvelles propriétés. */
+            border-radius: 1px;
+}
+.btn {
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-navbar {
+    display: none;
+    float: right;
+    padding: 12px 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.icon-bar + .icon-bar { /* Le + permet de sélectionner les éléments qui suivent */
+    margin-top: 3px;
+}
+    </style>
+</head>
+<body>
+    <a class="btn btn-navbar" id="btnMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+    <script>
+        window.onload=function(){
+    var bouton = document.getElementById('btnMenu');
+    var nav = document.getElementById('nav');
+    bouton.onclick = function(e){
+        if(nav.style.display=="block"){
+            nav.style.display="none";
+        }else{
+            nav.style.display="block";
+        }
+    };
+};
+    </script>
+</body>
+</html>

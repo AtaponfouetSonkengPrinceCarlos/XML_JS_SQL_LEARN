@@ -1,0 +1,13 @@
+hr.onreadystatechange = function() { // On gère ici une requête asynchrone
+ 
+    if (xhr.readyState == 4 && xhr.status == 200) { // Si le fichier est chargé sans erreur
+ 
+        document.getElementById('fileContent').innerHTML = '<span>' + xhr.responseText + '</span>'; // On l'affiche !
+ 
+    } else if(xhr.readyState == 4 && xhr.status != 200) { // En cas d'erreur !
+     
+        alert('Une erreur est survenue !\n\nCode :' + xhr.status + '\nTexte : ' + xhr.statusText);
+ 
+    }
+ 
+};

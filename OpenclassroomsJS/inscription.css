@@ -1,0 +1,138 @@
+img.left
+{
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 4px;
+}
+li
+{
+    position: relative;
+    left: 500px;
+    display: inline;
+    padding: 5px;
+}
+li a
+{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px aqua;
+}
+nav
+{
+position: absolute;
+top:0 ;
+left: 0;
+right: 0;
+  
+}
+header
+{
+    height: 90px;
+    background-color:rgb(54, 55, 114);   
+}
+li a:hover
+{
+    color: aqua;
+    border-bottom: 3px solid aqua;
+    position: relative;
+    bottom: 5px;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+li a:active
+{
+    position: relative;
+    top: 5px;
+}
+img.left1
+{
+    position: absolute;
+    left: 700px;
+    height: 870px;
+    border-radius: 20px;
+    margin-top: -5px;
+}
+p.underimage
+{
+    position: absolute;
+    left: 800px;
+    color: white;
+    text-indent: 10px;
+    font-size: 30px;
+}
+body
+{
+    background-color: rgb(231, 241, 241);
+}
+div.center
+{
+    position: relative;
+    left: 100px;
+}
+button{
+    display: block;
+    position: relative;
+    left: 400px;
+    height: 30px;
+    width: 70px;
+    background-color:rgb(54, 55, 114);
+    color: white;
+    top: 80px;
+}
+button:active{
+    position: relative;
+    top: 5px;
+    
+}
+h1{
+    color: rgb(59, 57, 57);
+    border-bottom: 3px solid gray;
+    margin-right: 1040px;
+}
+input
+{
+    height: 30px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+}
+flooter{
+    position: relative;
+    top: 500px;
+}
+flooter div
+{
+    text-align: right;
+}
+p.mail
+{
+position: relative;
+left: 50px;
+}
+p.rpwd
+{
+    position: relative;
+    top: 100px;
+}
+p.pwd
+{
+    position: relative;
+    top: 70px;
+}
+select
+{
+    background-color:rgb(128, 75, 175);
+    opacity: 0.5;
+}
+option
+{
+    background-color:rgb(128, 75, 175);
+    opacity: 0.5;
+    height: 50px;
+    display:block;
+}

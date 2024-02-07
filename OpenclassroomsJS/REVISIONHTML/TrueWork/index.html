@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css" />
+    <title>Zozor - Carnets de voyage</title>
+</head>
+<body>
+    <div id="bloc_page">
+        <header>
+            <div id="titre_principal">
+                <img src="images/logo.png" alt="Logo du wifi" id="logo" />
+                <h1>Zozor</h1>
+                <h2>Carnets de voyage</h2>
+            </div>
+            <a class="btn btn-navbar" id="btnMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+         <hr>
+        <div id="banniere_image">
+            <div id="banniere_description">
+                Retour sur mes vacances aux États-Unis...
+                <a href="#" class="bouton_rouge">Voir l'article <img src="images/carrevert.png" alt="" /></a>
+        </div>
+        </div>
+        <section>
+            <article>
+                <h1><img src="images/ico_epingle.png" alt="Catégorie voyage" class="ico_categorie" />Je suis un grand voyageur</h1>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem...</p>
+                <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue...</p>
+            </article>
+            <aside>
+                <h1>À propos de l'auteur</h1>
+                <img src="images/bulle.png" alt="" id="fleche_bulle" />
+                <p id="photo_zozor"><img src="images/zozor.png" alt="Photo de Zozor" /></p>
+                <p>Laisse-moi le temps de me présenter : je m'appelle Zozor, je suis né un 23 novembre 2005.</p>
+                <p>Bien maigre, n'est-ce pas ? C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie (ou zBiographie, comme vous voulez !) afin que les zéros sachent qui je suis réellement.</p>
+                <p><img src="images/facebook.png" alt="Facebook" /><img src="images/facebook.png" alt="Twitter" /><img src="images/facebook.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>
+            </aside>
+        </section>
+         <hr>
+        <footer>
+            <div id="tweet">
+                <h1>Mon dernier tweet</h1>
+                <p>Hii haaaaaan !</p>
+                <p>le 12 mai à 23h12</p>
+            </div>
+            <div id="mes_photos">
+                <h1>Mes photos</h1>
+                <p><img src="images/photo4.png" alt="Photographie" /><img src="images/photo4.png" alt="Photographie" /><img src="images/photo4.png" alt="Photographie" /><img src="images/photo4.jpg" alt="Photographie" /></p>
+            </div>
+            <div id="mes_amis">
+                <h1>Mes amis</h1>
+                <ul>
+                    <li><a href="#">Pupi le lapin</a></li>
+                    <li><a href="#">Mr Baobab</a></li>
+                    <li><a href="#">Kaiwaii</a></li>
+                    <li><a href="#">Perceval.eu</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Belette</a></li>
+                    <li><a href="#">Le concombre masqué</a></li>
+                    <li><a href="#">Ptit prince</a></li>
+                    <li><a href="#">Mr Fan</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.onload=function(){
+    var bouton = document.getElementById('btnMenu');
+    var nav = document.getElementById('nav');
+    bouton.onclick = function(e){
+        if(nav.style.display=="block"){
+            nav.style.display="none";
+        }else{
+            nav.style.display="block";
+        }
+    };
+};
+    </script>
+</body>
+</html>

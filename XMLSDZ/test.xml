@@ -1,0 +1,7 @@
+<p>Hier j'ai écrit un fichier XML de ouf !</p>
+<p>&lt;monfichierXML&gt;
+        &lt;balise1&gt;
+                &lt;balise2&gt;Du texte&lt;/balise2&gt;
+        &lt;/balise1&gt;
+        &lt;balise1 truc=&quot;pouf&quot; paf=&quot;pif&quot;/&gt;
+&lt;/monfichierXML&gt;</p>
